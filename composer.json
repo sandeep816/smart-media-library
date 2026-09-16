@@ -1,0 +1,39 @@
+{
+    "$schema": "https://getcomposer.org/schema.json",
+    "name": "sandeep816/smart-media-library",
+    "description": "A powerful, reusable media library for Laravel & Filament.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "filament",
+        "media",
+        "media-library",
+        "file-manager",
+        "image",
+        "upload",
+        "asset-management"
+    ],
+    "homepage": "https://github.com/sandeep816/smart-media-library",
+    "support": {
+        "issues": "https://github.com/sandeep816/smart-media-library/issues",
+        "source": "https://github.com/sandeep816/smart-media-library"
+    },
+    "require": {
+        "php": "^8.3",
+        "filament/filament": "^5.8",
+        "illuminate/support": "^12.0 || ^13.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "FilamentMediaLibrary\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "FilamentMediaLibrary\\FilamentMediaLibraryServiceProvider"
+            ]
+        }
+    }
+}
