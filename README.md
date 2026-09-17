@@ -1,5 +1,7 @@
 # Smart Media Library
 
+[![Tests](https://github.com/sandeep816/smart-media-library/actions/workflows/tests.yml/badge.svg)](https://github.com/sandeep816/smart-media-library/actions/workflows/tests.yml)
+
 A powerful, reusable media library for Laravel & Filament.
 
 Smart Media Library provides a centralized WordPress-style media management experience for Laravel applications using Filament.
@@ -36,7 +38,12 @@ Designed as an independent, reusable package that can be dropped into any Larave
 ### Verified Environment Matrix
 - **Development Host**: PHP 8.3.30, Laravel 13.32.0, Filament 5.8.2, MySQL 8.0
 - **Fresh-Host Clean Installation**: PHP 8.5.0, Laravel 13.32.0, Filament 5.8.2, SQLite
-*(Note: While `composer.json` declares compatibility with Laravel 12 and 13, automated release verification directly targeted Laravel 13 on PHP 8.3 and PHP 8.5).*
+- **GitHub Actions CI Matrix (Verified)**:
+  - PHP 8.3 + Laravel 12 + Filament 5.8: **PASS**
+  - PHP 8.3 + Laravel 13 + Filament 5.8: **PASS**
+  - PHP 8.4 + Laravel 12 + Filament 5.8: **PASS**
+  - PHP 8.4 + Laravel 13 + Filament 5.8: **PASS**
+  - PHP 8.5 + Laravel 13 + Filament 5.8: **PASS**
 
 ---
 
@@ -475,6 +482,23 @@ php artisan media-library:regenerate --preset=thumbnail --force
 ## Independence Disclaimer
 
 Smart Media Library is an independent open-source community package for Filament. It is not affiliated with or endorsed by Filament.
+
+---
+
+## Development & Testing
+
+Smart Media Library includes a standalone test suite powered by Orchestra Testbench and PHPUnit:
+
+```bash
+# Install dependencies
+composer install
+
+# Run test suite
+composer test
+
+# Run code style linter
+composer lint
+```
 
 ---
 

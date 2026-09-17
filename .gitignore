@@ -6,3 +6,6 @@ composer.lock
 .idea/
 .vscode/
 *.log
+.env
+.env.*
+/build/
