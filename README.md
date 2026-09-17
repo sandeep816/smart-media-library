@@ -478,6 +478,23 @@ Smart Media Library is an independent open-source community package for Filament
 
 ---
 
+## Development & Testing
+
+Smart Media Library includes a standalone test suite powered by Orchestra Testbench and PHPUnit:
+
+```bash
+# Install dependencies
+composer install
+
+# Run test suite
+composer test
+
+# Run code style linter
+composer lint
+```
+
+---
+
 ## License
 
 The MIT License (MIT).
